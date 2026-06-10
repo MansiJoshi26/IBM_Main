@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Delivery Website</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+    <!-- Hover CSS -->
+    <link rel="stylesheet" href="css/hover-min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Section Start -->
+    <header class="navbar">
+        <nav id="site-top-nav" class="navbar-menu navbar-fixed-top">
+            <div class="container">
+                <!-- logo -->
+                <div class="logo">
+                    <a href="index.html" title="Logo">
+                        <img src="img/logo.svg" alt="Logo" class="img-responsive">
+                    </a>
+                </div>
+                <!-- Main Menu -->
+                <div class="menu text-right">
+                    <ul>
+                        <li><a class="hvr-underline-from-center" href="index.html">Home</a></li>
+                        <li><a class="hvr-underline-from-center" href="categories.html">Categories</a></li>
+                        <li><a class="hvr-underline-from-center" href="foods.html">Foods</a></li>
+                        <li><a class="hvr-underline-from-center" href="order.html">Order</a></li>
+                        <li><a class="hvr-underline-from-center" href="contact.html">Contact</a></li>
+                        <li><a class="hvr-underline-from-center" href="login.html">Login</a></li>
+                        <li>
+                            <a id="shopping-cart" class="shopping-cart">
+                                <i class="fa fa-cart-arrow-down"></i>
+                                <span class="badge">0</span>
+                            </a>
+                            <div id="cart-content" class="cart-content">
+                                <h3 class="text-center">Shopping Cart</h3>
+                                <table class="cart-table" border="0">
+                                    <tr>
+                                        <th>Food</th>
+                                        <th>Name</th>
+                                        <th>Price</th>
+                                        <th>Qty</th>
+                                        <th>Total</th>
+                                        <th>Action</th>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="4">Total</th>
+                                        <th>$0.00</th>
+                                        <th></th>
+                                    </tr>
+                                </table>
+                                <a href="order.html" class="btn-primary">Confirm Order</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Navigation Section End -->
+
+    <!-- Food Search Section Start -->
+    <section class="food-search text-center" >
+        <div class="container">
+            <h2 style="background: #44bd32;">Foods on <a href="#" class="text-white" id="search-term">"..."</a></h2>
+        </div>
+    </section>
+    <!-- Food Search Section End -->
+
+    <!-- Foods Section Start -->
+    <section class="food-menu">
+        <div class="container">
+            <h2 class="text-center">Food Menu</h2>
+            <div class="heading-border"></div>
+            <div class="grid-2">
+                <div class="food-menu-box" data-name="Pizza">
+                    <form>
+                        <div class="food-menu-img">
+                            <img src="img/food/p1.jpg" alt="" class="img-responsive img-curve">
+                        </div>
+                        <div class="food-menu-desc">
+                            <h4>Pizza</h4>
+                            <p class="food-price">$8.00</p>
+                            <p class="food-details"> <b> Fresh, Cheesy, Irresistible </b> &#127829; 
+                                <br>
+                                Enjoy our handcrafted pizzas topped with the finest ingredients and baked to perfection. One slice is never enough.</p>
+                             </p>
+                            <input type="number" value="1" min="1">
+                            <input type="submit" class="btn-primary" value="Place Order">
+                        </div>
+                    </form>
+                </div>
+                <div class="food-menu-box" data-name="Sandwich">
+                    <form>
+                        <div class="food-menu-img">
+                            <img src="img/food/s1.jpg" alt="" class="img-responsive img-curve">
+                        </div>
+                        <div class="food-menu-desc">
+                            <h4>Sandwich</h4>
+                            <p class="food-price">$8.00</p>
+                            <p class="food-details"><b> Stacked with Flavor</b>
+                                <br>
+                                Freshly made sandwiches loaded with crisp veggies, juicy fillings, and creamy spreads -- the perfect bite for any time of day! </p>
+                           
+                            <input type="number" value="1" min="1">
+                            <input type="submit" class="btn-primary" value="Place Order">
+                        </div>
+                    </form>
+                </div>
+                <div class="food-menu-box" data-name="Burger">
+                    <form>
+                        <div class="food-menu-img">
+                            <img src="img/food/b1.jpg" alt="" class="img-responsive img-curve">
+                        </div>
+                        <div class="food-menu-desc">
+                            <h4>Burger</h4>
+                            <p class="food-price">$8.00</p>
+                            <p class="food-details"><b>Big on Taste, Bold in Flavor</b>
+                                <br>
+                                Juicy patties, fresh veggies, and melty cheese stacked in a soft bun --our burgers are a bite of pure satisfaction! </p>
+                          </p>
+                            <input type="number" value="1" min="1">
+                            <input type="submit" class="btn-primary" value="Place Order">
+                        </div>
+                    </form>
+                </div>
+                <div class="food-menu-box" data-name="Pizza">
+                    <form>
+                        <div class="food-menu-img">
+                            <img src="img/food/changes1.jpg" alt="" class="img-responsive img-curve">
+                        </div>
+                        <div class="food-menu-desc">
+                            <h4>Momos</h4>
+                            <p class="food-price">$8.00</p>
+                            <p class="food-details">
+                                <b> Hot,Fresh and Flavor-Packed! </b>
+                                <br>
+                                Soft, steamed momos filled with juicy chicken, spiced veggies, or paneer -served with fiery chutney for the ultimate street food experience. </p>
+                            
+                            </p>
+                            <input type="number" value="1" min="1">
+                            <input type="submit" class="btn-primary" value="Place Order">
+                        </div>
+                    </form>
+                </div>
+                <div class="food-menu-box" data-name="Sandwich">
+                    <form>
+                        <div class="food-menu-img">
+                            <img src="img/food/changes2.jpg" alt="" class="img-responsive img-curve">
+                        </div>
+                        <div class="food-menu-desc">
+                            <h4>Noodles</h4>
+                            <p class="food-price">$8.00</p>
+                            <p class="food-details"><b> Slurp-Worthy, Spicy & Satisfying! </b>
+                                <br>
+                            Wok-tossed noodles loaded with veggies, sauces, and bold flavors - the perfect blend of taste and texture in every bite!</p>
+                           </p>
+                            <input type="number" value="1" min="1">
+                            <input type="submit" class="btn-primary" value="Place Order">
+                        </div>
+                    </form>
+                </div>
+                <div class="food-menu-box" data-name="Burger">
+                    <form>
+                        <div class="food-menu-img">
+                            <img src="img/food/chnages3.jpg" alt="" class="img-responsive img-curve">
+                        </div>
+                        <div class="food-menu-desc">
+                            <h4>Coffee</h4>
+                            <p class="food-price">$8.00</p>
+                            <p class="food-details"><b>Brewed to Perfection!</b>
+                                <br>
+                                Rich, aromatic coffee that energizes your day - smooth, bold, and crafted for true coffee lovers!</p>
+                             </p> 
+                            <input type="number" value="1" min="1">
+                            <input type="submit" class="btn-primary" value="Place Order">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="food-menu-box">
+                    <form>
+                        <div class="food-menu-img">
+                            <img src="img/food/samosa.jpg" alt="" class="img-responsive img-curve" style="height: 90px;">
+                        </div>
+                        <div class="food-menu-desc">
+
+                            <h4>Samosa</h4>
+                            <p class="food-price">$8.00</p>
+                            <p class="food-details"><b>Crispy, Spicy, Addictive!</b>
+                                <br>
+                                Our golden-fried samosas are packed with zesty potato filling and bold Indian spices. The ultimate tea-time classic!</p>
+                            <input type="number" value="1" min="1">
+                            <input type="submit" class="btn-primary" value="Place Order">
+                         </div>
+                 </form>
+                </div>
+
+                <div class="food-menu-box">
+                    <form>
+                        <div class="food-menu-img">
+                            <img src="img/food/Pasta.jpg" alt="" class="img-responsive img-curve" style="height: 90px;">
+                        </div>
+                        <div class="food-menu-desc">
+
+                            <h4>Pasta</h4>
+                            <p class="food-price">$8.00</p>
+                            <p class="food-details"><b>Creamy, Comforting, Crave-Worthy!</b>
+                                <br>
+                            Our pasta is tossed in rich, velvety sauces with fresh veggies and cheese - a spoonful of comfort in every bite!</p>
+                            <input type="number" value="1" min="1">
+                            <input type="submit" class="btn-primary" value="Place Order">
+                         </div>
+                 </form>
+                </div>
+
+                <div class="food-menu-box">
+                    <form>
+                        <div class="food-menu-img">
+                            <img src="img/food/manchurian.jpg" alt="" class="img-responsive img-curve" style="height: 90px;">
+                        </div>
+                        <div class="food-menu-desc">
+
+                            <h4>Manchurian</h4>
+                            <p class="food-price">$8.00</p>
+                            <p class="food-details"><b>Bold, Saucy, Street-Style!</b>
+                                <br>
+                            Crispy veggie balls tossed in a spicy Indo-Chineese gravy - our Manchurian is all about that fiery flavor punch!</p>
+                            <input type="number" value="1" min="1">
+                            <input type="submit" class="btn-primary" value="Place Order">
+                         </div>
+                 </form>
+                </div>
+
+                <div class="food-menu-box">
+                    <form>
+                        <div class="food-menu-img">
+                            <img src="img/food/fries.jpg" alt="" class="img-responsive img-curve" style="height: 90px;">
+                        </div>
+                        <div class="food-menu-desc">
+
+                            <h4>French Fries</h4>
+                            <p class="food-price">$8.00</p>
+                            <p class="food-details"><b>Crispy, Salty, Snack-Perfect!</b>
+                                <br>
+                            Golden-fried potato sticks sprinkled with classic seasoning - your all time favourite munches done right!</p>
+                            <input type="number" value="1" min="1">
+                            <input type="submit" class="btn-primary" value="Place Order">
+                         </div>
+                 </form>
+                </div>
+                
+
+                <div class="food-menu-box">
+                    <form>
+                        <div class="food-menu-img">
+                            <img src="img/food/Pav-BHaji.jpg" alt="" class="img-responsive img-curve" style="height: 90px;">
+                        </div>
+                        <div class="food-menu-desc">
+
+                            <h4>Pav-Bhaji</h4>
+                            <p class="food-price">$8.00</p>
+                            <p class="food-details"><b>Bold, Buttery, Bhaji Bliss!</b>
+                                <br>
+                            Mumbai,s iconic street food - spicy mashed veggies served with golden-toasted pav.Pure comfort on a plate!</p>
+                            <input type="number" value="1" min="1">
+                            <input type="submit" class="btn-primary" value="Place Order">
+                         </div>
+                 </form>
+                </div>
+
+                <div class="food-menu-box">
+                    <form>
+                        <div class="food-menu-img">
+                            <img src="img/food/dosa.jpg" alt="" class="img-responsive img-curve" style="height: 90px;">
+                        </div>
+                        <div class="food-menu-desc">
+
+                            <h4>Dosa</h4>
+                            <p class="food-price">$8.00</p>
+                            <p class="food-details"><b>Crispy, Savory, South-Style!</b>
+                                <br>
+                            A golden, paper-thin crepe made from fermented batter, served hot with chutney and sambar - light,crispy and soul-satisfying!</p>
+                            <input type="number" value="1" min="1">
+                            <input type="submit" class="btn-primary" value="Place Order">
+                         </div>
+                 </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Foods Section End -->
+
+    <!-- Footer Section Start -->
+    <section class="footer">
+        <div class="container">
+            <div class="grid-3">
+
+                <!--About Us-->
+                <div class="aboutus-flex">
+                    <img src="img/footerimage.png" alt="Logo" class="footer-logo"/>
+                    <div class="about-content">
+                        <p>Food Fusion connects customers with local food centers, providing a seamless and delightful dining experience.</p>
+                        <p>Our shared passion for food and community drives us to bring qualiy meals directly to you doorstep.</p>
+                    </div>
+                </div>
+                <div class="FoodFusion">
+                    <h3>Food Fusion</h3>
+                    <div class="foodfusion">
+                        <a href="WhoWeAre.html">Who We Are</a>
+                        <a href="Blog.html">Blog</a>
+                        <a href="WorkWithus.html">Work With Us</a>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="ReportFraud.html">Report Fraud</a>
+                    </div>
+                </div>
+                <!-- Learn More Links -->
+                <div>
+                    <h3>Learn More</h3>
+                    <div class="learnmore" >
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Security</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Lodge Complaint</a>
+                        <a href="#">Testimonials</a>
+                    </div>
+                </div>
+                <div class="FollowUs">
+                    <!-- Social Links -->
+                    <h3>Social Links</h3>
+                    <div class="social">
+                        <ul>
+                             <li><a href="https://www.facebook.com/">
+                                <img src="/img/footer-icons/facebook.svg" alt="X icon" width="24" height="24">
+                                Facebook
+                                </a></li>
+                            <li><a href="https://www.instagram.com/">
+                            <img src="/img/footer-icons/instagram.png" alt="X icon" width="24" height="24">
+                               Instagram
+                                </a>
+                            </li>
+                            <li><a href="https://x.com/">
+                                <img src="/img/footer-icons/x-twitter.svg" alt="X icon" width="24" height="24">
+                                Twitter
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section End -->
+
+    <!-- Copyright Section start -->
+    <section class="copyright">
+        <div class="container text-center">
+            <p>All rights reserved. Design By <a href="#">Devansh</a></p>
+        </div>
+        <a id="back-to-top" class="btn-primary">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+    </section>
+    <!-- Copyright Section End -->
+
+    <!-- Custom JS -->
+    <script src="js/cart-sound.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html>

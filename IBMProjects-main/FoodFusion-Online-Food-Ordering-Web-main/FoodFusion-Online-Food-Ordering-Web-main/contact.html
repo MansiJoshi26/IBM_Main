@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Delivery Website</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+    <!-- Hover CSS -->
+    <link rel="stylesheet" href="css/hover-min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Section Start -->
+    <header class="navbar">
+        <nav id="site-top-nav" class="navbar-menu navbar-fixed-top">
+            <div class="container">
+                <!-- logo -->
+                <div class="logo">
+                    <a href="index.html" title="Logo">
+                        <img src="img/logo.svg" alt="Logo" class="img-responsive">
+                    </a>
+                </div>
+                <!-- Main Menu -->
+                <div class="menu text-right">
+                    <ul>
+                        <li><a class="hvr-underline-from-center" href="index.html">Home</a></li>
+                        <li><a class="hvr-underline-from-center" href="categories.html">Categories</a></li>
+                        <li><a class="hvr-underline-from-center" href="foods.html">Foods</a></li>
+                        <li><a class="hvr-underline-from-center" href="order.html">Order</a></li>
+                        <li><a class="hvr-underline-from-center" href="contact.html">Contact</a></li>
+                        <li><a class="hvr-underline-from-center" href="login.html">Login</a></li>
+                        <li>
+                            <a id="shopping-cart" class="shopping-cart">
+                                <i class="fa fa-cart-arrow-down"></i>
+                                <span class="badge">0</span>
+                            </a>
+                            <div id="cart-content" class="cart-content">
+                                <h3 class="text-center">Shopping Cart</h3>
+                                <table class="cart-table" border="0">
+                                    <tr>
+                                        <th>Food</th>
+                                        <th>Name</th>
+                                        <th>Price</th>
+                                        <th>Qty</th>
+                                        <th>Total</th>
+                                        <th>Action</th>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="4">Total</th>
+                                        <th>$0.00</th>
+                                        <th></th>
+                                    </tr>
+                                </table>
+                                <a href="order.html" class="btn-primary">Confirm Order</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Navigation Section End -->
+
+    <!-- Contact Section Start -->
+    
+        <section class="contact-section" style="padding: 30px 20px; background: linear-gradient(to bottom right, #fff6f0, #ffeaea);">
+  <div class="container" style="max-width: 1900px; margin: 0 auto;">
+    <h2 style="text-align: center; font-size: 2.5rem; font-weight: 700; margin-bottom: 40px;">Get in Touch</h2>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between;">
+
+      <!-- FAQs -->
+       <div class="faq-box">
+  <h3 class="faq-title">
+    <span class="emoji">🧠</span> Frequently Asked Questions
+  </h3>
+  <div class="faq-item">
+    <details>
+      <summary>How can I track my order?</summary>
+      <p>We’ll email tracking details once your order is shipped.</p>
+    </details>
+  </div>
+  <div class="faq-item">
+    <details>
+      <summary>Can I cancel my meal?</summary>
+      <p>Yes, within 30 mins of ordering. Contact support.</p>
+    </details>
+  </div>
+  <div class="faq-item">
+    <details>
+      <summary>Do you support cash on delivery?</summary>
+      <p>Yes, we support COD for select locations.</p>
+    </details>
+  </div>
+  <div class="faq-item">
+    <details>
+      <summary>Can I change delivery address?</summary>
+      <p>Address changes are accepted within 1 hour of order.</p>
+    </details>
+  </div>
+</div>
+      <!-- Contact Form -->
+      <div style="flex: 1.5; min-width: 180px; background: white; border-radius: 16px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+        <form>
+          <div style="margin-bottom: 15px;">
+            <label for="category"><strong>Category</strong></label>
+            <select id="category" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc;">
+              <option value="">Select a category</option>
+              <option value="order">Order Inquiry</option>
+              <option value="cancel">Cancel Request</option>
+              <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select>
+          </div>
+          <div style="margin-bottom: 15px;">
+            <label for="name"><strong>Full Name</strong></label>
+            <input type="text" id="name" placeholder="Enter your name..." required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc;">
+          </div>
+          <div style="margin-bottom: 15px;">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" id="email" placeholder="Enter your email..." required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc;">
+          </div>
+          <div style="margin-bottom: 15px;">
+            <label for="phone"><strong>Phone Number</strong></label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc;">
+          </div>
+          <div style="margin-bottom: 20px;">
+            <label for="message"><strong>Your Message</strong></label>
+            <textarea id="message" rows="4" placeholder="Type your message..." style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc;"></textarea>
+          </div>
+          <button type="submit" style="background: #f44336; color: white; border: none; padding: 12px 20px; border-radius: 8px; cursor: pointer; font-weight: 600;">Send Message</button>
+        </form>
+      </div>
+       <!-- My recent Orders -->
+        <div class="order-summary-card">
+  <h3>🛒 My Recent Orders</h3>
+  <ul>
+    <li>
+      <span>🍱 Paneer Rice Bowl – <strong>Delivered</strong> Jul 18</span>
+      <button>Reorder</button>
+    </li>
+    <li>
+      <span>🥗 Keto Salad Box – <strong>Cancelled</strong> Jul 15</span>
+      <button>Reorder</button>
+    </li>
+  <!-- Why Choose Us Section -->
+<div class="usp-card">
+  <h3>🌟 Why Choose Us?</h3>
+  <ul>
+    <li><span class="icon">✅</span> Farm-Fresh Ingredients</li>
+    <!-- <li><span class="icon">⏱️</span> Delivered in Under 45 Minutes</li> -->
+    <li><span class="icon">📦</span> Eco-friendly, Reusable Packaging</li>
+    <li><span class="icon">🧑‍⚕️</span> Diet Plans Approved by Nutritionists</li>
+  </ul>
+</div>
+</div>
+    </div>
+  </div>
+</section>
+<!--Contact Section End -->
+     <!-- Map Section Start -->
+     <section class="map">
+        <h2 class="text-center">Find Us</h2>
+        <div class="heading-border"></div>
+
+        <iframe id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d118103.45687625333!2d91.81986775!3d22.32593435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1671287502415!5m2!1sen!2sbd" ></iframe>
+     </section>
+     <!-- Map Section End -->
+
+    <!-- Footer Section Start -->
+    <section class="footer">
+        <div class="container">
+            <div class="grid-3">
+
+                <!--About Us-->
+                <div class="aboutus-flex">
+                    <img src="img/footerimage.png" alt="Logo" class="footer-logo"/>
+                    <div class="about-content">
+                         <p style="text-align:justify;">Food Fusion connects customers with local food centers, providing a seamless and delightful dining experience.</p>
+                        <p style="text-align:justify;">Our shared passion for food and community drives us to bring quality meals directly to your doorstep.</p>
+                    </div>
+                </div>
+                <div class="FoodFusion">
+                    <h3>Food Fusion</h3>
+                    <div class="foodfusion">
+                        <a href="WhoWeAre.html">Who We Are</a>
+                        <a href="Blog.html">Blog</a>
+                        <a href="WorkWithus.html">Work With Us</a>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="ReportFraud.html">Report Fraud</a>
+                    </div>
+                </div>
+                <!-- Learn More Links -->
+                <div>
+                    <h3>Learn More</h3>
+                    <div class="learnmore" >
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Security</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Lodge Complaint</a>
+                        <a href="#">Testimonials</a>
+                    </div>
+                </div>
+                <div class="FollowUs">
+                    <!-- Social Links -->
+                    <h3>Social Links</h3>
+                    <div class="social">
+                        <ul>
+                             <li><a href="https://www.facebook.com/">
+                                <img src="/img/footer-icons/facebook.svg" alt="X icon" width="24" height="24">
+                                Facebook
+                                </a></li>
+                            <li><a href="https://www.instagram.com/">
+                            <img src="/img/footer-icons/instagram.png" alt="X icon" width="24" height="24">
+                               Instagram
+                                </a>
+                            </li>
+                            <li><a href="https://x.com/">
+                                <img src="/img/footer-icons/x-twitter.svg" alt="X icon" width="24" height="24">
+                                Twitter
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section End -->
+
+    <!-- Copyright Section start -->
+    <section class="copyright">
+        <div class="container text-center">
+            <p>All rights reserved. Design By <a href="#">Devansh</a></p>
+        </div>
+        <a id="back-to-top" class="btn-primary">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+    </section>
+    <!-- Copyright Section End -->
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- Jquery UI -->
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <!-- Cart Sound JS -->
+    <script src="js/cart-sound.js"></script>
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+
+</html>
